@@ -7,9 +7,15 @@
   <title>Document</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
-  
-  <a href="a.html">halaman a</a>
+<body
+  <nav>
+    <h1>Hello World</h1>
+    <ul>
+      <li>
+        <a href="a.html">Menuju Halaman A</a>
+      </li>
+    </ul>
+  </nav>
 
 Momo Belia Deviluke
 <img src="momo.jpg" alt="momo" width="100px">
@@ -37,14 +43,36 @@ Momo Belia Deviluke
         </tbody>
     </table>
 
+  <h2>Hacktoberfest 2020</h2>
+  <p>Say no to SPAM</p>
+  <img src="https://hacktoberfest.digitalocean.com/assets/HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c.svg" alt="Hacktoberfest 2020 Logo" width="200px">
 <!-- Service Worker -->
 <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js')
-          .then(function() {
-                console.log('Service Worker Registered');
-          });
-      }
-    </script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(function() {
+            console.log('Service Worker Registered');
+      });
+  }
+</script>
 </body>
+<style>
+  body {
+    margin: 0px;
+  }
+  h1 {
+    margin: 0px;
+    padding: 5px;
+  }
+  nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; 
+  }
+  ul {
+    list-style: none;
+  }
+</style>
 </html>
